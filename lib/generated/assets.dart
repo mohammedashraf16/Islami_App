@@ -130,5 +130,7 @@ class Assets {
   static const String imagesRadio = 'assets/images/radio.png';
   static const String imagesRadioimage = 'assets/images/radioimage.png';
   static const String imagesSebha = 'assets/images/sebha.png';
+  static const String imagesSplashDark = 'assets/images/splash_dark.png';
+  static const String imagesSplashlight = 'assets/images/splashlight.png';
 
 }
