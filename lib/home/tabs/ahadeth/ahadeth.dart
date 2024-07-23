@@ -4,8 +4,6 @@ import 'package:islami/generated/assets.dart';
 import 'package:islami/home/tabs/ahadeth/model/hadeth_model.dart';
 import 'package:islami/home/tabs/ahadeth/ahadeth_details/hadeth_Details.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
-import 'package:islami/providers/my_provider.dart';
-import 'package:provider/provider.dart';
 class AhadethTab extends StatefulWidget {
   AhadethTab({super.key});
 
@@ -18,7 +16,6 @@ class _AhadethTabState extends State<AhadethTab> {
 
   @override
   Widget build(BuildContext context) {
-    MyProvider provider = Provider.of<MyProvider>(context);
     if (allAhadeth.isEmpty) {
       loadHadethFile();
     }
