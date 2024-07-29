@@ -1,6 +1,7 @@
 {
   "app_title":"إسلامي",
   "sura_names": "اسم السورة",
+  "number_of_verses":"عدد الايات",
   "quran": "القرآن",
   "sebha": "سبحه",
   "radio": "الراديو",

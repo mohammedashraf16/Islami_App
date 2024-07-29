@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:islami/home/home.dart';
 import 'package:islami/home/tabs/ahadeth/ahadeth_details/hadeth_Details.dart';
+import 'package:islami/providers/ahadeth_details_provider.dart';
 import 'package:islami/theme/my_theme_data.dart';
 import 'package:islami/providers/my_provider.dart';
 import 'package:islami/home/tabs/quran/sura_details/sura_details.dart';
@@ -11,6 +12,9 @@ void main() {
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(
       create: (context) => MyProvider()..getTheme()..getLanguage(),
+    ),
+    ChangeNotifierProvider(
+      create: (context) => AhadethDetailsProvider()..loadHadethFile(),
     ),
 
   ], child: const MyApp()));

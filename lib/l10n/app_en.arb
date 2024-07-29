@@ -1,6 +1,7 @@
 {
   "app_title":"Islami",
-  "sura_names": "SuraNames",
+  "sura_names": "Sura Names",
+  "number_of_verses": "Verses",
   "quran": "Quran",
   "sebha": "Sebha",
   "radio": "Radio",
