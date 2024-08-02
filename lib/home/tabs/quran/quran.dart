@@ -200,38 +200,41 @@ class QuranTab extends StatelessWidget {
                 },
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 15.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
-                    children: [
-                      Text(
-                        "${versesNumber[index]}",
-                        textAlign: TextAlign.left,
-                        style: provider.isDark()
-                            ? Theme.of(context)
-                            .textTheme
-                            .bodyMedium
-                            ?.copyWith(color: Colors.white)
-                            : Theme.of(context)
-                            .textTheme
-                            .bodyMedium
-                            ?.copyWith(color: Colors.black),
-                      ),
-                      const VerticalDivider(),
-                      Text(
-                        suraNames[index],
-                        textAlign: TextAlign.center,
-                        style: provider.isDark()
-                            ? Theme.of(context)
-                                .textTheme
-                                .bodyMedium
-                                ?.copyWith(color: Colors.white)
-                            : Theme.of(context)
-                                .textTheme
-                                .bodyMedium
-                                ?.copyWith(color: Colors.black),
-                      ),
+                  child: Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 45.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          "${versesNumber[index]}",
+                          textAlign: TextAlign.left,
+                          style: provider.isDark()
+                              ? Theme.of(context)
+                              .textTheme
+                              .bodyMedium
+                              ?.copyWith(color: Colors.white)
+                              : Theme.of(context)
+                              .textTheme
+                              .bodyMedium
+                              ?.copyWith(color: Colors.black),
+                        ),
+                        const VerticalDivider(),
+                        Text(
+                          suraNames[index],
+                          textAlign: TextAlign.center,
+                          style: provider.isDark()
+                              ? Theme.of(context)
+                                  .textTheme
+                                  .bodyMedium
+                                  ?.copyWith(color: Colors.white)
+                              : Theme.of(context)
+                                  .textTheme
+                                  .bodyMedium
+                                  ?.copyWith(color: Colors.black),
+                        ),
 
-                    ],
+                      ],
+                    ),
                   ),
                 ),
               );
