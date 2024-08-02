@@ -1,4 +1,4 @@
-# islami_c11_friday
+# islami_App
 
 A new Flutter project.
 
