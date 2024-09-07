@@ -39,6 +39,7 @@ flutter pub get
 * Theme
 * Localozation
 * Provider (State Management)
+* Api
 
 ### Folder Structure
 Here is the core folder structure which flutter provides.
