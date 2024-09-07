@@ -85,6 +85,18 @@ constants/
 |- strings.dart
 |- assets.dart
 ```
+### Packages 
+```
+Packages /
+|- flutter_native_splash
+|- google_fonts
+|- provider
+|- shared_preferences
+|- flutter_localizations
+|- intl
+|- http
+|- audioplayers
+```
 ### Samples Of Ui:
 ###### In Dark Mode
    <div>
