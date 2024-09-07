@@ -1,44 +1,52 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:islami/core/services/api/api_manager.dart';
 import 'package:islami/generated/assets.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:islami/home/models/radio_model.dart';
+import 'package:islami/home/widgets/radio_item.dart';
 
 class RadioTab extends StatelessWidget {
   const RadioTab({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        Image.asset(Assets.imagesRadioimage),
-        Text(
-          AppLocalizations.of(context)!.holy_quran_radio,
-          style: Theme.of(context).textTheme.bodyLarge,
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          children: [
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.skip_previous_rounded,
-                  size: 40,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.play_arrow_rounded,
-                  size: 40,
-                )),
-            IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.skip_next_rounded,
-                  size: 40,
-                )),
-          ],
-        )
-      ],
+    AudioPlayer player = AudioPlayer();
+    ApiManager.getRadios();
+    return FutureBuilder(
+      future: ApiManager.getRadios(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return Center(
+            child: CircularProgressIndicator(
+              color: Theme.of(context).primaryColor,
+            ),
+          );
+        } else if (snapshot.hasError) {
+          return Text('Error: ${snapshot.error}');
+        } else {
+          List<Radios>? radios = snapshot.data?.radios ?? [];
+          return Column(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              SizedBox(height: MediaQuery.of(context).size.height * .1),
+              Expanded(child: Image.asset(Assets.imagesRadioimage)),
+              Expanded(
+                child: ListView.builder(
+                  physics: const PageScrollPhysics(),
+                  itemCount: radios.length,
+                  scrollDirection: Axis.horizontal,
+                  itemBuilder: (context, index) {
+                    return RadioItem(
+                      player: player,
+                      radio: radios[index],
+                    );
+                  },
+                ),
+              )
+            ],
+          );
+        }
+      },
     );
   }
 }
