@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:islami/home/bottom_sheets/language_bottomsheet.dart';
-import 'package:islami/home/bottom_sheets/theme_bottomsheet.dart';
-import 'package:islami/providers/my_provider.dart';
+import 'package:islami/features/home/bottom_sheets/language_bottomsheet.dart';
+import 'package:islami/features/home/bottom_sheets/theme_bottomsheet.dart';
+import 'package:islami/features/providers/my_provider.dart';
 import 'package:islami/theme/my_theme_data.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';

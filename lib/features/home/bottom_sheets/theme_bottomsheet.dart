@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:islami/features/providers/my_provider.dart';
 import 'package:islami/theme/my_theme_data.dart';
-import 'package:islami/providers/my_provider.dart';
 import 'package:provider/provider.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
-class LanguageBottomSheet extends StatelessWidget {
-  const LanguageBottomSheet({super.key});
+class ThemeBottomSheet extends StatelessWidget {
+  const ThemeBottomSheet({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,26 +21,24 @@ class LanguageBottomSheet extends StatelessWidget {
           children: [
             InkWell(
               onTap: () {
-                pro.changeLanguage("en");
+                pro.changeTheme(ThemeMode.dark);
+                Navigator.pop(context);
               },
-              child: pro.appLanguage == "en"
-                  ? showSelectedItem(
-                      context, AppLocalizations.of(context)!.english)
-                  : showUnSelectedItem(
-                      context, AppLocalizations.of(context)!.english),
+              child: pro.isDark()
+                  ? showSelectedItem(context, "Dark")
+                  : showUnSelectedItem(context, "Dark"),
             ),
             const SizedBox(
               height: 24,
             ),
             InkWell(
               onTap: () {
-                pro.changeLanguage("ar");
+                pro.changeTheme(ThemeMode.light);
+                Navigator.pop(context);
               },
-              child: pro.appLanguage == "en"
-                  ? showUnSelectedItem(
-                      context, AppLocalizations.of(context)!.arabic)
-                  : showSelectedItem(
-                      context, AppLocalizations.of(context)!.arabic),
+              child: pro.isDark()
+                  ? showUnSelectedItem(context, "Light")
+                  : showSelectedItem(context, "Light"),
             ),
           ],
         ),
@@ -57,16 +54,16 @@ class LanguageBottomSheet extends StatelessWidget {
         Text(
           text,
           style: pro.isDark()
-              ? Theme.of(context).textTheme.bodyLarge?.copyWith(color: yellowColor)
+              ? Theme.of(context).textTheme.bodyMedium
               : Theme.of(context)
                   .textTheme
-                  .bodyLarge
+                  .bodyMedium
                   ?.copyWith(color: primaryColor),
         ),
         Icon(
           Icons.done,
           size: 30,
-          color: pro.isDark()?  yellowColor : primaryColor,
+          color: pro.isDark() ? yellowColor : primaryColor,
         ),
       ],
     );
@@ -79,10 +76,11 @@ class LanguageBottomSheet extends StatelessWidget {
       children: [
         Text(
           text,
-          style: pro.appLanguage=="en"
+          style: pro.isDark()
               ? Theme.of(context)
                   .textTheme
-                  .bodyLarge
+                  .bodyMedium
+                  ?.copyWith(color: Colors.white)
               : Theme.of(context).textTheme.bodyMedium,
         ),
       ],

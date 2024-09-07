@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:islami/home/home.dart';
-import 'package:islami/home/tabs/ahadeth/ahadeth_details/hadeth_Details.dart';
-import 'package:islami/providers/ahadeth_details_provider.dart';
+import 'package:islami/features/home/home.dart';
+import 'package:islami/features/home/tabs/ahadeth/ahadeth_details/hadeth_Details.dart';
+import 'package:islami/features/home/tabs/quran/sura_details/sura_details.dart';
+import 'package:islami/features/providers/ahadeth_details_provider.dart';
+import 'package:islami/features/providers/my_provider.dart';
 import 'package:islami/theme/my_theme_data.dart';
-import 'package:islami/providers/my_provider.dart';
-import 'package:islami/home/tabs/quran/sura_details/sura_details.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
       routes: {
-        HomeScreen.routeName: (context) => HomeScreen(),
+        HomeScreen.routeName: (context) => const HomeScreen(),
         SuraDetailsScreen.routeName: (context) => const SuraDetailsScreen(),
         HadethDetailsScreen.routeName: (context) => const HadethDetailsScreen(),
       },

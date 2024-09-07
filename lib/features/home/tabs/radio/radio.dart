@@ -1,9 +1,9 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
+import 'package:islami/core/generated/assets.dart';
 import 'package:islami/core/services/api/api_manager.dart';
-import 'package:islami/generated/assets.dart';
-import 'package:islami/home/models/radio_model.dart';
-import 'package:islami/home/widgets/radio_item.dart';
+import 'package:islami/features/home/models/radio_model.dart';
+import 'package:islami/features/home/widgets/radio_item.dart';
 
 class RadioTab extends StatelessWidget {
   const RadioTab({super.key});

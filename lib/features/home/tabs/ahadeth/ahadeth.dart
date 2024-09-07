@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:islami/generated/assets.dart';
-import 'package:islami/home/tabs/ahadeth/model/hadeth_model.dart';
-import 'package:islami/home/tabs/ahadeth/ahadeth_details/hadeth_Details.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+import 'package:islami/core/generated/assets.dart';
+import 'package:islami/features/home/tabs/ahadeth/ahadeth_details/hadeth_Details.dart';
+import 'package:islami/features/home/tabs/ahadeth/model/hadeth_model.dart';
 class AhadethTab extends StatefulWidget {
-  AhadethTab({super.key});
+  const AhadethTab({super.key});
 
   @override
   State<AhadethTab> createState() => _AhadethTabState();
@@ -35,12 +35,12 @@ class _AhadethTabState extends State<AhadethTab> {
           textAlign: TextAlign.center,
           style:Theme.of(context).textTheme.bodyLarge
         ),
-        Divider(
+        const Divider(
           thickness: 3,
         ),
         Expanded(
           child: ListView.separated(
-            separatorBuilder: (context, index) => Divider(),
+            separatorBuilder: (context, index) => const Divider(),
             itemBuilder: (context, index) {
               return InkWell(
                 onTap: () {

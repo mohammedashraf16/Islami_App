@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart'as http;
-import 'package:islami/home/models/radio_model.dart';
+import 'package:islami/features/home/models/radio_model.dart';
 class ApiManager{
   static Future<RadioModel?> getRadios()async{
     Uri url = Uri.parse("https://mp3quran.net/api/v3/radios");

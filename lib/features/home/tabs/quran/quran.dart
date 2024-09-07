@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:islami/generated/assets.dart';
-import 'package:islami/home/tabs/quran/sura_details/sura_details.dart';
-import 'package:islami/home/tabs/quran/sura_details/model/sura_model.dart';
-import 'package:islami/providers/my_provider.dart';
+import 'package:islami/core/generated/assets.dart';
+import 'package:islami/features/home/tabs/quran/sura_details/model/sura_model.dart';
+import 'package:islami/features/home/tabs/quran/sura_details/sura_details.dart';
+import 'package:islami/features/providers/my_provider.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 

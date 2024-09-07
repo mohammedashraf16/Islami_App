@@ -1,6 +1,6 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart'hide Radio;
-import 'package:islami/home/models/radio_model.dart';
+import 'package:islami/features/home/models/radio_model.dart';
 class RadioItem extends StatefulWidget {
    RadioItem({required this.player,required this.radio, super.key});
 Radios radio;
