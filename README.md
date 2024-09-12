@@ -105,10 +105,8 @@ Packages /
   ![islami_dark](https://github.com/user-attachments/assets/ad478450-47bd-49fa-9533-e33f3ff648fb)
   
  ###### In Dark Mode
-  <div>
-     <img src="https://github.com/mohammedashraf16/Islami_App/blob/main/samples_of_ui/home_screen_inLight.png" width = "200">
-     <img src="https://github.com/mohammedashraf16/Islami_App/blob/main/samples_of_ui/settings_ui_inlight.png"width = "200">
-     <div>
+ 
+ ![islami_light](https://github.com/user-attachments/assets/8e8c70b5-d925-480e-b782-0fa1196cc1d2)
 
        
 ## Conclusion
