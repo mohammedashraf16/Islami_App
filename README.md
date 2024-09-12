@@ -11,6 +11,8 @@ A Islami project created in flutter using  Provider. Islami support mobile, clon
 
 The Islami contains the minimal implementation required to create a new library or project. The repository code is preloaded with some basic components like basic app architecture, app theme, constants and required dependencies to create a new project. This will also help in reducing setup & development time by allowing you to use same code pattern and avoid re-writing from scratch.
 
+![islami_dark](https://github.com/user-attachments/assets/ad478450-47bd-49fa-9533-e33f3ff648fb)
+
 ## How to Use 
 
 **Step 1:**
@@ -99,12 +101,9 @@ Packages /
 ```
 ### Samples Of Ui:
 ###### In Dark Mode
-   <div>
-     <img src="https://github.com/mohammedashraf16/Islami_App/blob/main/samples_of_ui/home_screen_inDark.png" width = "200">
-     <img src="https://github.com/mohammedashraf16/Islami_App/blob/main/samples_of_ui/settings_ui_inDark.png"width = "200">
-     <img src="https://github.com/mohammedashraf16/Islami_App/blob/main/samples_of_ui/sebah_screen_inDark.png"width = "200">
-     <div>
 
+  ![islami_dark](https://github.com/user-attachments/assets/ad478450-47bd-49fa-9533-e33f3ff648fb)
+  
  ###### In Dark Mode
   <div>
      <img src="https://github.com/mohammedashraf16/Islami_App/blob/main/samples_of_ui/home_screen_inLight.png" width = "200">
