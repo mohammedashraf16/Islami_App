@@ -1,6 +1,6 @@
 # Golden Quran  Project
 
-A Golden Quran  project created in flutter using  Provider. Golden Quran aims to foster a deeper connection with the text, making it easier for users to engage with and reflect upon its teachings. Whether for personal study or communal learning, this project serves as a valuable resource for Muslims and anyone interested in the Quran, clone the appropriate branche mentioned below:
+A Golden Quran  project created in flutter using  Provider.Golden Quran is an innovative mobile application designed to enhance the experience of reading and interacting with the Quran. This project provides users with an intuitive interface that allows for seamless navigation through the verses, offering features like audio recitation, translations in multiple languages, and some ahadeth, clone the appropriate branche mentioned below:
 
 * For Mobile: https://github.com/mohammedashraf16/Islami_App
 
