@@ -1,6 +1,3 @@
-# This branch is still under development
-
-
 # Islami Project
 
 A Islami project created in flutter using  Provider. Islami support mobile, clone the appropriate branche mentioned below:
