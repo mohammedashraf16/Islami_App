@@ -1,12 +1,12 @@
-# Islami Project
+# Golden Quran  Project
 
-A Islami project created in flutter using  Provider. Islami support mobile, clone the appropriate branche mentioned below:
+A Golden Quran  project created in flutter using  Provider. Golden Quran aims to foster a deeper connection with the text, making it easier for users to engage with and reflect upon its teachings. Whether for personal study or communal learning, this project serves as a valuable resource for Muslims and anyone interested in the Quran, clone the appropriate branche mentioned below:
 
 * For Mobile: https://github.com/mohammedashraf16/Islami_App
 
 ## Getting Started
 
-The Islami contains the minimal implementation required to create a new library or project. The repository code is preloaded with some basic components like basic app architecture, app theme, constants and required dependencies to create a new project. This will also help in reducing setup & development time by allowing you to use same code pattern and avoid re-writing from scratch.
+The Golden Quran contains the minimal implementation required to create a new library or project. The repository code is preloaded with some basic components like basic app architecture, app theme, constants and required dependencies to create a new project. This will also help in reducing setup & development time by allowing you to use same code pattern and avoid re-writing from scratch.
 
 ![islami_dark](https://github.com/user-attachments/assets/ad478450-47bd-49fa-9533-e33f3ff648fb)
 
@@ -30,7 +30,7 @@ flutter pub get
 
 
 
-## Islami Features:
+## Golden Quran Features:
 
 * Splash
 * Home
